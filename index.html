@@ -10,8 +10,8 @@
     
 
     <div id="app">
-        <ul>
-            <li v-for="item in 10">{{ email }}</li>
+        <ul v-if="email.length === 10">
+            <li v-for="(email, i) in email" @key="i">{{ email }}</li>
         </ul>
     </div>
 
